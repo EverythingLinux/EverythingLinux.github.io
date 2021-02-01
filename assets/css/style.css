@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans&display=swap');
+
+* {
+    font-family: inherit;
+    background-color: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: calc(1em + 0.33vw);
+}
+
+body {
+    color: #ffffff;
+    background: url(../img/background.jpeg);
+    max-width: 700px;
+    font-size: 18px;
+    font-family: 'Google Sans', Helvetica, Arial, sans-serif;
+    margin: auto;
+}
+
+a {
+  color: #c2c2c2;
+  font-family: 'Google Sans', Helvetica, Arial, sans-serif;
+}
+
+a:hover {
+  color: cornflowerblue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Google Sans', Helvetica, Arial, sans-serif;
+    font-weight: 900;
+
+    font-size: 1.7em;
+}
+
+.small {
+  font-family: 'Google Sans', Helvetica, Arial, sans-serif;
+  text-shadow: 1px 1px 1px #ccc;
+  font-size: 1.3em;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-family: 'Google Sans', Helvetica, Arial, sans-serif;
+}
+
+h2 {
+    font-size: 2.0rem;
+    margin: 5% auto;
+}
+
+h3 {
+    font-size: 1.88rem;
+}
+
+h4 {
+    font-size: 1.66rem;
+}
+
+/* index.html header */
+.index h1 {
+    font-size: 50px;
+}
+
+div, font, u {
+    font-family: 'Google Sans', Helvetica, Arial, sans-serif;
+}
+
+p {
+    font-family: 'Google Sans', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+
+.boxed {
+  border: 1px solid orangered;
+  padding: 1.5rem;
+  font-size: 20px;
+  background-color:#000000;
+}
+
+.boxed_small {
+  border: 1px solid orangered;
+  padding: 1.5rem;
+  font-size: 18px;
+  background-color:#000000;
+}
+
+.boxed_smallest {
+  border: 1px solid orangered;
+  padding: 1.5rem;
+  font-size: 16px;
+  background-color:#000000;
+}
+
+.red_text {
+  font-family: 'Google Sans', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: red;
+  font-weight: bold;
+}
+
+.subheaders {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.headers {
+  font-size: 20px;
+}
+
+a:target {
+  background-color: #616B87;
+  color: #000000;
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8, ikr, ewww */
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quotation{
+  font-size: 30px;
+  font-style: oblique;
+  font-weight: 900;
+  //margin: 0 auto;
+  quotes: "\201C""\201D""\2018""\2019";
+  padding: 10px 20px;
+  line-height: 1.4;
+}
+
+.quotation:before {
+  content: open-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: -10px;
+  position: relative;
+  top: 30px;
+  color: #94fe93;
+  font-size: 3em;
+}
+
+.quotation::after {
+  content: close-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: 10px;
+  position: relative;
+  top: 35px;
+  color: #94fe93;
+  font-size: 3em;
+}
+
+footer{
+  margin:0;
+  text-align: right;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+pre {
+    overflow-x: auto;
+    padding: 1rem;
+    border: 1px solid orangered;
+    background-color:#000000;
+}
+
+code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 0.95em;
+}
+
+@media screen and (max-width: 45em) {
+    body {
+        padding: 25px;
+    }
+    body a {
+        hyphens: auto;
+    }
+
+}    
+
+@media print {
+    a {
+        border: 0;
+    }
+    pre code {
+        white-space: pre-wrap !important;
+    }
+}  
