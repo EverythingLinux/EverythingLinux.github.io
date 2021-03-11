@@ -1001,7 +1001,6 @@ AppArmorProfile=/etc/apparmor.d/usr.bin.example</code></pre>
       <li><code>UMask=0077</code> — Sets the <a href="#umask">umask</a> to a more restrictive value.</li>
       <li><code>IPAddressDeny=any</code> — Blocks all incoming and outgoing traffic to/from any IP address. Set <code>IPAddressAllow=</code> to configure a whitelist. Alternatively, setup a network
       namespace with <code>PrivateNetwork=true</code>.</li>
-      <li><code>SystemCallArchitectures=native</code> — Prevents executing syscalls from other CPU architectures.</li>
       <li><code>AppArmorProfile=...</code> — Runs the process under the specified AppArmor profile.</li>
     </ul>
 
