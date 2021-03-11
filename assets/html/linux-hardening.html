@@ -772,7 +772,7 @@ install btusb /bin/false</code></pre>
       Removing the user from the <code>adm</code> group is often sufficient to revoke access to these logs:
     </p>
 
-    <pre><code>gpasswd -d adm $user</code></pre>
+    <pre><code>gpasswd -d $user adm</code></pre>
 
     <h3 id="restricting-sysfs">2.7 Restricting access to sysfs</h3>
 
