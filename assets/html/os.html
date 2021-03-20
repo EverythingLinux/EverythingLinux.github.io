@@ -66,6 +66,7 @@ You should always enable apparmor. This limits what a program can do. The script
 <h4><u>Firejail</u></h4>
 
 <img src="../img/firejail.png" width="640" height="167" alt="Firejail" class="center" style="max-width:100%;height:auto;">
+<br>
 
 <p>
 Firejail is a very secure and easy to use sandboxing program. It can be used in conjunction with Apparmor by the <span style="border: 1px solid green">firejail --apparmor</span> command. Running <span style="border: 1px solid green">firecfg</span> will make all programs automatically run in a sandbox if there is a profile for them in /etc/firejail. If you want to make only 1 program automatically run in a sandbox then run <span style="border: 1px solid green">ln -s /usr/bin/firejail /usr/local/bin/program</span>.
