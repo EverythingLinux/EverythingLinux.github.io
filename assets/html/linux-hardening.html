@@ -868,7 +868,7 @@ SupplementaryGroups=sysfs</code></pre>
       be sufficient for high quality profiles though; seek the <a href="https://gitlab.com/apparmor/apparmor/-/wikis/Documentation">AppArmor documentation</a> for more details. <br>
       <br>
       If you want to take it a step further, you can setup a full system MAC policy that confines every single user space process by implementing an initramfs hook which enforces
-      a MAC policy for the init system. This is how <a href="https://source.android.com/security/selinux">Android uses SELinux</a>, and how <a
+      a MAC policy for the init system. This is how <a href="https://source.android.com/security/selinux">Android uses SELinux</a> and how <a
       href="https://github.com/Whonix/apparmor-profile-everything">Whonix will use AppArmor in the future</a>. This is necessary for enforcing a strong security model implementing <a
       href="https://en.wikipedia.org/wiki/Principle_of_least_privilege">principle of least privilege</a>.
     </p>
@@ -1453,7 +1453,7 @@ WantedBy=multi-user.target</code></pre>
     <pre><code>chmod 700 /home/$user</code></pre>
 
     <p>
-      A few more examples are <code>/boot</code>, <code>/usr/src</code> and <code>/{,usr/}lib/modules</code> — these contain the kernel image, System.map, and various other files, all of
+      A few more examples are <code>/boot</code>, <code>/usr/src</code> and <code>/{,usr/}lib/modules</code> — these contain the kernel image, System.map and various other files, all of
       which <a href="#other-kernel-pointer-leaks">can leak sensitive information about the kernel</a>. To restrict access to these, execute:
     </p>
 
