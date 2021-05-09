@@ -21,6 +21,11 @@ body {
     margin: auto;
 }
 
+ul {
+    overflow: hidden;
+    padding-left: 2em;
+}
+
 a {
   color: #c2c2c2;
   font-family: 'Google Sans', Helvetica, Arial, sans-serif;
