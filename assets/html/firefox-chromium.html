@@ -32,6 +32,17 @@
     sandbox is quite weak for the following reasons. Note that this is a non-exhaustive list and the issues below are only a
     few examples of such weaknesses.
   </p>
+  
+  <p>
+    <a href="https://wiki.mozilla.org/Security/Sandbox">Firefox's sandboxing</a> lacks any <a
+    href="https://www.chromium.org/Home/chromium-security/site-isolation">site isolation</a>. Site isolation runs
+    every website inside its own sandbox so that an exploit in one website cannot access the data from another. In addition,
+    <a href="https://security.googleblog.com/2018/07/mitigating-spectre-with-site-isolation.html">site isolation is necessary
+    for complete protection against side-channel attacks like Spectre</a>. Mozilla is working on site isolation with <a
+    href="https://wiki.mozilla.org/Project_Fission">Project Fission</a> but it is still a work in progress and is not yet fit
+    for actual use. The sandbox is currently only focused on isolating the browser as a whole from the rest of the operating
+    system and even that is still not great.
+  </p>
 
   <h3 id="site-isolation">Site Isolation</a></h3>
 
