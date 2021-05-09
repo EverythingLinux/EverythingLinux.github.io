@@ -180,6 +180,17 @@ code {
     font-size: 0.95em;
 }
 
+.quote {
+    overflow-x: auto;
+    padding: 1rem;
+    border: 1px solid;
+    font-style: italic;
+}
+
+.lilist {
+    padding-bottom: 1em;
+}
+
 @media screen and (max-width: 45em) {
     body {
         padding: 25px;
