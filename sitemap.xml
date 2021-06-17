@@ -41,10 +41,6 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://EverythingLinux.github.io/assets/html/android.html</loc>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://EverythingLinux.github.io/assets/html/openbsd.html</loc>
   <priority>0.80</priority>
 </url>
