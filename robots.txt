@@ -1,0 +1,2 @@
+ser-agent: *
+Sitemap: https://madaidans-insecurities.github.io/sitemap.xml
