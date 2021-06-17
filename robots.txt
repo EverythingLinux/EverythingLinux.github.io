@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://everythinglinux.github.io/sitemap.xml
